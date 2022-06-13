@@ -18,6 +18,7 @@ background-attachment:fixed;
     top:550px;
     left: 0px;
     width: 250px;
+    z-index: 2;
 }
 .cloud{
     width: 250px;
@@ -34,14 +35,19 @@ background-attachment:fixed;
     position: absolute;
     width:300px;
     animation: birds;
-    animation-duration: 5s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
     /* animation-direction:alternate; */
 top: 0;
 right: 0;
 }
-
+.dog{
+    position: absolute;
+    width: 130px;
+    top: 530px;
+    left: 800px;
+}
 
 
 
