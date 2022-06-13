@@ -1,0 +1,68 @@
+.bg-image{
+background-image: url(https://img.freepik.com/free-vector/night-background-with-rental-house_33099-1128.jpg?w=2000);
+height:780px;
+width:100%;
+background-repeat: no-repeat;
+background-size:cover;
+background-position:center;
+position: relative;
+background-attachment:fixed;
+}
+.horseimg{
+    position: absolute;
+    animation-name: carmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    top:550px;
+    left: 0px;
+    width: 250px;
+}
+.cloud{
+    width: 250px;
+    top:50px;
+    left:50px;
+    position: absolute;
+    animation: cloudmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction:alternate ; 
+}
+.birds{
+    position: absolute;
+    width:300px;
+    animation: birds;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    /* animation-direction:alternate; */
+top: 0;
+right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* keyframe */
+@keyframes carmove{
+    from{left: 0; transform: rotate(0deg);}
+    to{left: 1000px; transform: rotate(-35deg);}
+    
+}
+@keyframes cloudmove{
+    from{top: 0; }
+    to{bottom: 100px; }
+}
+@keyframes birds{
+    from{right 0}
+    to{right: 1550px;}
+}
