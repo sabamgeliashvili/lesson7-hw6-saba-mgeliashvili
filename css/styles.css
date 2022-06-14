@@ -6,15 +6,15 @@ background-repeat: no-repeat;
 background-size:cover;
 background-position:center;
 position: relative;
-background-attachment:fixed;
+background-attachment:scroll;
 }
 .horseimg{
     position: absolute;
-    animation-name: carmove;
+    animation-name:horsemove;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
-    animation-direction: alternate;
+    /* animation-direction: alternate; */
     top:550px;
     left: 0px;
     width: 250px;
@@ -45,7 +45,7 @@ right: 0;
 .dog{
     position: absolute;
     width: 130px;
-    top: 530px;
+    top: 550px;
     left: 800px;
 }
 
@@ -58,8 +58,8 @@ right: 0;
 
 
 
-/* keyframe */
-@keyframes carmove{
+/* keyframes */
+@keyframes horsemove{
     from{left: 0; transform: rotate(0deg);}
     to{left: 1000px; transform: rotate(-35deg);}
     
