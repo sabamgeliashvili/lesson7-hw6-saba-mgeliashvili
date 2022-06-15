@@ -18,7 +18,7 @@ background-attachment:scroll;
     top:550px;
     left: 0px;
     width: 250px;
-    z-index: 2;
+    z-index: 5;
 }
 .cloud{
     width: 250px;
@@ -47,6 +47,7 @@ right: 0;
     width: 130px;
     top: 550px;
     left: 800px;
+    z-index: 4;
 }
 .rock{
     width: 100px;
@@ -54,6 +55,18 @@ right: 0;
     left: 1250px;
     position: absolute;
 }
+.walker{
+    top: 440px;
+    right: 0px;
+    position: absolute;
+    width: 135px;
+    animation-name:walker;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    z-index: 3;
+
+}
+
 
 
 
@@ -80,5 +93,9 @@ right: 0;
 }
 @keyframes birds{
     from{right 0}
+    to{right: 1550px;}
+}
+@keyframes walker{
+    from{right: 0;}
     to{right: 1550px;}
 }
