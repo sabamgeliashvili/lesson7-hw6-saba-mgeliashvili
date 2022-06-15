@@ -48,7 +48,12 @@ right: 0;
     top: 550px;
     left: 800px;
 }
-
+.rock{
+    width: 100px;
+    top: 700px;
+    left: 1250px;
+    position: absolute;
+}
 
 
 
@@ -62,6 +67,11 @@ right: 0;
 @keyframes horsemove{
     from{left: 0; transform: rotate(0deg);}
     to{left: 1000px; transform: rotate(-35deg);}
+    /* 0%{left: 200px;}
+    20%{ left: 400px;}
+    50%{ left: 600px;}
+    70%{ left: 800px;}
+    100%{left: 1000px; transform: rotate(-35deg);} */
     
 }
 @keyframes cloudmove{
